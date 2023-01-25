@@ -13,4 +13,8 @@ const images = [
   },
 ];
 
-const listItemRef = document.createElement('li');
+const galleryRef = document.querySelector('.gallery');
+const newListItem = images
+  .map(element => `<li><img src=${element.url} alt=${element.alt} width="300"></img></li>`)
+  .join('');
+galleryRef.insertAdjacentHTML('afterbegin', newListItem);
