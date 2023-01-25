@@ -12,3 +12,5 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listItemRef = document.createElement('li');
