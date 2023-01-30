@@ -7,6 +7,7 @@ const colorVisualAidRef = document.querySelector('.color');
 const tagBodyRef = document.querySelector('body');
 
 changeColorBtnRef.addEventListener('click', event => {
-  colorVisualAidRef.textContent = getRandomHexColor();
-  tagBodyRef.style.backgroundColor = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  colorVisualAidRef.textContent = randomColor;
+  tagBodyRef.style.backgroundColor = randomColor;
 });
